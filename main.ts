@@ -8,7 +8,8 @@ radio.onReceivedString(function (receivedString) {
     if (receivedString == "ConfirmM3") {
         confirmed = true
     } else if (isCloseEnough) {
-        radio.sendString("M3Found")
+        basic.pause(Math.randomRange(0, 1000))  // Introducing a slight delay
+        radio.sendString("M2Found")
     } else {
         radio.sendString("M3Searching")
     }
