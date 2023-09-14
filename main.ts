@@ -5,7 +5,7 @@ radio.onReceivedString(function (receivedString) {
     } else {
         isCloseEnough = false
     }
-    if (receivedString == "Confirm3") {
+    if (receivedString == "ConfirmM3") {
         confirmed = true
     } else if (isCloseEnough) {
         radio.sendString("M3Found")
